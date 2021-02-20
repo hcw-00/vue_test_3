@@ -6,6 +6,7 @@
           <div class="title">
             <h3>Menu</h3>
           </div>
+          <p> md-toolbar class="md-primary" </p>
           <md-toolbar class="md-primary">
             <div class="md-toolbar-row">
               <div class="md-toolbar-section-start">

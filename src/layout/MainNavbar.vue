@@ -7,6 +7,53 @@
     :color-on-scroll="colorOnScroll"
   >
     <div class="md-toolbar-row md-collapse-lateral">
+      <drop-down direction="down">
+        <md-button
+          slot="title"
+          class="md-button md-button-link md-white md-simple"
+          data-toggle="dropdown"
+        >
+          <md-icon>menu</md-icon>
+        </md-button>
+        <ul
+          class="dropdown-menu"
+          :class="{ 'dropdown-menu-right': responsive }"
+        >
+          <li class="dropdown-header">Dropdown header</li>
+          <li>
+            <a href="#/" class="dropdown-item">main page</a>
+          </li>
+          <li class="dropdown-divider"></li>
+          <li>
+            <a href="#/test" class="dropdown-item">Deep learning</a>
+          </li>
+          <li>
+            <a href="#/test" class="dropdown-item">Machine learning general</a>
+          </li>
+          <li>
+            <a href="#pablo" class="dropdown-item"
+              >Another action</a
+            >
+          </li>
+          <li>
+            <a href="#pablo" class="dropdown-item"
+              >Something else here</a
+            >
+          </li>
+          <li class="dropdown-divider"></li>
+          <li>
+            <a href="#pablo" class="dropdown-item"
+              >Separated link</a
+            >
+          </li>
+          <li class="dropdown-divider"></li>
+          <li>
+            <a href="#pablo" class="dropdown-item"
+              >One more separated link</a
+            >
+          </li>
+        </ul>
+      </drop-down>
       <div class="md-toolbar-section-start">
         <h3 class="md-title">Vue Material Kit</h3>
       </div>

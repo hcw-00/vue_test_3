@@ -16,6 +16,55 @@
                     <md-list-item href="javascript:void(0)">
                       <p>Link</p>
                     </md-list-item>
+                    <li class="md-list-item">
+                    <a
+                      href="javascript:void(0)"
+                      class="md-list-item-router md-list-item-container md-button-clean dropdown"
+                    >
+                      <div class="md-list-item-content">
+                        <drop-down direction="down">
+                          <md-button
+                            slot="title"
+                            class="md-button md-button-link md-white md-simple dropdown-toggle"
+                            data-toggle="dropdown"
+                          >
+                            <p>Dropdown</p>
+                          </md-button>
+                          <ul
+                            class="dropdown-menu"
+                            :class="{ 'dropdown-menu-right': responsive }"
+                          >
+                            <li class="dropdown-header">Dropdown header</li>
+                            <li>
+                              <a href="#pablo" class="dropdown-item">Action</a>
+                            </li>
+                            <li>
+                              <a href="#pablo" class="dropdown-item"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#pablo" class="dropdown-item"
+                                >Something else here</a
+                              >
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                              <a href="#pablo" class="dropdown-item"
+                                >Separated link</a
+                              >
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                              <a href="#pablo" class="dropdown-item"
+                                >One more separated link</a
+                              >
+                            </li>
+                          </ul>
+                        </drop-down>
+                      </div>
+                    </a>
+                    </li>
                   </md-list>
                 </div>
                 <div class="md-toolbar-section-end">
